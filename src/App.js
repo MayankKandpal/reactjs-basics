@@ -16,12 +16,20 @@ import Person from './list-rendering/Person';
 import Parent from './parent-child/Parent';
 import Greetings from './props/Greetings';
 import Message from './state/Message';
+import Inline from './styling/Inline';
+import StyleSheet from './styling/StyleSheet';
+import './styling/appStyle.css'
+import styles from './styling/appStyle.module.css'
 // import Person from './state/Person';
-
+import Form from './Form-handling/Form'
+import LifeCycleA from './life-cycle-methods/LifeCycleA';
+import Todos from './ajax-calls/Todos';
+import TodosTwo from './ajax-calls/TodosTwo';
 function App() {
   return (
     <div className='container'>
-      <h1>Welcome to React JS</h1>
+      {/* <h1 className = 'error'>Welcome to React JS</h1> */}
+      {/* <h1 className={styles.success}>This is using css modules</h1> */}
       {/* <EventBind/>
       <br />
       <FunctionClick/>
@@ -33,7 +41,12 @@ function App() {
      <UserGreeting/>
      <br />
      <UserGreetingTwo/> */}
-     <NameListThree/>
+     {/* <NameListThree/> */}
+     {/* <StyleSheet primary ={true}/>
+     <Inline/> */}
+   {/* <Form/> */}
+   {/* <LifeCycleA/> */}
+    <TodosTwo/>
     </div>
     
   )
